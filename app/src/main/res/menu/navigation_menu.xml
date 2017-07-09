@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:id="@+id/homeGroup" >
+    <item android:id="@+id/home"
+        android:title="Home" />
+    </group>
+
+    <group android:id="@+id/contactUsGroup">
+    <item android:id="@+id/contactUs"
+        android:title="Contact Us" />
+    </group>
+
+    <group android:id="@+id/logoutGroup">
+    <item android:id="@+id/logout"
+        android:title="Logout" />
+    </group>
+
+    <group android:id="@+id/exitGroup">
+    <item android:id="@+id/exit"
+        android:title="Exit" />
+    </group>
+
+</menu>

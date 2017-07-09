@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.p.pocketdoc">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logofinal"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".SplashScreen"
+            android:windowSoftInputMode="adjustPan"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Wizard"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Login"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Register"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Verify"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Home"
+            android:hardwareAccelerated="true"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".SymptomCheckerPage1"
+            android:parentActivityName=".Home"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Home" />
+        </activity>
+        <activity
+            android:name=".SymptomCheckerPage2"
+            android:parentActivityName=".SymptomCheckerPage1"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".SymptomCheckerPage1" />
+        </activity>
+        <activity
+            android:name=".SymptomCheckerPage3"
+            android:parentActivityName=".SymptomCheckerPage1"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".SymptomCheckerPage1" />
+        </activity>
+        <activity
+            android:name=".ViewDisease"
+            android:parentActivityName=".Home"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Home" />
+        </activity>
+        <activity
+            android:name=".ViewSpecificDisease"
+            android:parentActivityName=".ViewDisease"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ViewDisease" />
+        </activity>
+        <activity
+            android:name=".FirstAid"
+            android:parentActivityName=".Home"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Home" />
+        </activity>
+        <activity
+            android:name=".SpecificFirstAid"
+            android:parentActivityName=".FirstAid"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".FirstAid" />
+        </activity>
+        <activity
+            android:name=".Anatomy"
+            android:parentActivityName=".Home"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Home" />
+        </activity>
+        <activity
+            android:name=".SpecificAnatomy"
+            android:parentActivityName=".Anatomy"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Anatomy" />
+        </activity>
+        <activity
+            android:name=".Other"
+            android:parentActivityName=".Home"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Home" />
+        </activity>
+        <activity
+            android:name=".BMI"
+            android:parentActivityName=".Other"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Other" />
+        </activity>
+        <activity
+            android:name=".NearbyHospital"
+            android:parentActivityName=".Home"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Home" />
+        </activity>
+        <activity
+            android:name=".NearbyHospitalDetail"
+            android:parentActivityName=".NearbyHospital"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".NearbyHospital" />
+        </activity>
+        <activity
+            android:name=".ForumMain"
+            android:parentActivityName=".Other"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Other" />
+        </activity>
+        <activity
+            android:name=".ForumDetail"
+            android:parentActivityName=".ForumMain"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ForumMain" />
+        </activity>
+        <activity
+            android:name=".ForumPost"
+            android:parentActivityName=".ForumMain"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ForumMain" />
+        </activity>
+        <activity android:name=".CommentPost"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".ViewImage"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".AboutUs"
+            android:parentActivityName=".Home"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Home" />
+        </activity>
+    </application>
+
+</manifest>

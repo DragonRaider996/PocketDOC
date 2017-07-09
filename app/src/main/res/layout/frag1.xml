@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#673AB7">
+
+    <ImageView
+        android:id="@+id/frag1image"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/wizard1"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/frag1image"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:textColor="@color/White"
+        android:gravity="center"
+        android:fontFamily="cursive"
+        android:text="Select symptoms and know from which disease you might be suffering"
+        android:padding="5dp"
+        android:textSize="20sp"/>
+
+
+</RelativeLayout>
